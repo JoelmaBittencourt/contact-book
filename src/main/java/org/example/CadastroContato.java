@@ -3,24 +3,16 @@ package org.example;
 public class CadastroContato {
 
     public static void main(String[] args) {
-        var endereco = new Endereco();
-        endereco.setCep("jhiuhdi");
 
+        var Telefone = new Telefone("celular", "11", "9999-9999");
 
-        Telefone telefone = new Telefone();
-        Telefone telefone2 = new Telefone();
+        var Contato = new Contato("Jorge Silva", Telefone);
 
-        Telefone[] telefones = new Telefone[2];
-        telefones[0] = telefone;
-        telefones[1] = telefone2;
+        var Endereco = new Endereco("Rua bonita", "58", "000000-000",
+                "city", "Sp");
 
-        var pessoa = new Contato();//criar verificação para evitar null pointer
-        pessoa.setEndereco(endereco);
-        pessoa.setTelefones(telefones);
-
-
-        System.out.println(pessoa.getEndereco().getCep());
-        System.out.println(pessoa.getTelefones());
+        Contato.setEndereco(Endereco);
+       System.out.println( Contato.getEndereco().getCidade());
 
 
     }

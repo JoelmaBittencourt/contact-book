@@ -1,2 +1,2 @@
-rootProject.name = "magic-village-school"
+rootProject.name = "contact-book"
 

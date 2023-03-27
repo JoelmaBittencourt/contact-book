@@ -2,24 +2,12 @@ package org.example;
 
 public class Contato {
    private String nome;
-   private String idade;
     private Endereco endereco;
-    private Telefone[] telefones;
+    private Telefone telefones;
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
+    public Contato(String nome, Telefone telefones) {
         this.nome = nome;
-    }
-
-    public String getIdade() {
-        return idade;
-    }
-
-    public void setIdade(String idade) {
-        this.idade = idade;
+        this.telefones = telefones;
     }
 
     public Endereco getEndereco() {
@@ -30,11 +18,11 @@ public class Contato {
         this.endereco = endereco;
     }
 
-    public Telefone[] getTelefones() {
-        return telefones;
+    public String getNome() {
+        return nome;
     }
 
-    public void setTelefones(Telefone[] telefones) {
-        this.telefones = telefones;
+    public Telefone getTelefones() {
+        return telefones;
     }
 }
