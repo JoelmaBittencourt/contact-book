@@ -1,7 +1,7 @@
 package org.example;
 
 public class Contato {
-   private String nome;
+   private static String nome;
     private Endereco endereco;
     private Telefone telefones;
 
