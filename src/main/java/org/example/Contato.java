@@ -1,7 +1,7 @@
 package org.example;
 
 public class Contato {
-   private static String nome;
+    private String nome;
     private Endereco endereco;
     private Telefone telefones;
 
@@ -16,13 +16,5 @@ public class Contato {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public Telefone getTelefones() {
-        return telefones;
     }
 }
